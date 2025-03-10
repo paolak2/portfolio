@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Killera</title>
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="imagenes/Fav icon.png"> 
+    <!--iconos-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--stylesheet-->
+    <link rel="stylesheet" href="css/stylecssportfolio.css">
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Sigmar&display=swap" rel="stylesheet">
+    <style>
+        #hero{
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,1.0),
+                rgba(0,0,0,0.5)
+                ) 
+            ,url(imagenes/logo.png);
+            max-height: 500px;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="cabecera">
+        <div class="container">
+            <p class="logo"><a href="#hero"><span class="material-symbols-outlined">infrared</span></a></p>
+            <nav class="contenedor-enlaces">
+                <a href="#Aboutme">About me</a>
+                <a href="#skills">Skills</a>
+                <a href="#">CV</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Porfolio<br> Desarrollador Web Back|FrontEnd</h1>
+            <button>Trabajos</button>
+            <button>Curriculum Vitae</button>
+        </section>
+
+        <section id="Aboutme">
+            <h2>Conoce a Killera</h2>
+            <div class="container">
+                <div class="container-imagen">
+                    <img src="imagenes/Lisa-negro.png" alt="Imagen personal">
+                </div>
+                <div class="texto">
+                <p>¡Hola! Soy Ketlin Paola Marriaga Escorcia, pero en el mundo digital me encontrarás como Killera, un nombre que honra mis raíces en Barranquilla, Colombia. Actualmente, estoy en mi primer año de Desarrollo de Aplicaciones Web, explorando y perfeccionando mis habilidades en programación y en Bases de Datos. Me encanta entender cómo organizar y manejar la información de manera óptima para desarrollar soluciones robustas y escalables.
+                    <br>Aunque mi experiencia laboral previa no está directamente relacionada con la programación, siempre he sido una persona resolutiva, responsable y comprometida con cada proyecto en el que me involucro.
+                    <br>Estoy en un viaje de crecimiento dentro del mundo del desarrollo web, con ganas de aportar soluciones innovadoras y seguir evolucionando como profesional. 
+                    Si quieres saber más sobre mi trabajo o colaborar conmigo, ¡estaré encantada de conectar contigo!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <div class="habilidades">    
+                    <div class="container-habilidades">
+                        <i class="bi bi-laptop-fill" id="icono"></i>
+                        <h3>HARD-SKILLS</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis in laboriosam nemo obcaecati fugiat. Quam, architecto, modi voluptatum aperiam molestiae temporibus nostrum deserunt dolorem iure numquam corporis quos perspiciatis asperiores?</p>
+                        <button>+Info</button>
+                    </div>
+                    <div class="container-habilidades">
+                        <i class="bi bi-github" id="icono"></i>
+                        <h3>SOFT-SKILLS</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis in laboriosam nemo obcaecati fugiat. Quam, architecto, modi voluptatum aperiam molestiae temporibus nostrum deserunt dolorem iure numquam corporis quos perspiciatis asperiores?</p>
+                        <button>+Info</button>
+                    </div>
+                    <div class="container-habilidades">
+                        <i class="bi bi-backpack2-fill" id="icono"></i>
+                        <h3>IN PROGRESS...</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis in laboriosam nemo obcaecati fugiat. Quam, architecto, modi voluptatum aperiam molestiae temporibus nostrum deserunt dolorem iure numquam corporis quos perspiciatis asperiores?</p>
+                        <button>+Info</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <div class="container">
+                <div class="contactoideas">
+                    <h3>Contactame si necesitas...</h3>
+                    <ul>
+                        <li><ion-icon name="bulb-outline"></ion-icon>Ayuda con tus ideas</li>
+                        <li><ion-icon name="bag-check-outline"></ion-icon>Servicios de diseño y programacion en tu negocio</li>
+                        <li><ion-icon name="wifi-outline"></ion-icon>Asistencia completa y online</li>
+                        <li><ion-icon name="person-add-outline"></ion-icon>Soporte 1:1</li>
+                    </ul>
+                </div>
+                <div class="contactoideas">
+                    <form class="container-formulario">
+                        <fieldset>
+                                <label for="Nombre">Nombre:</label>
+                                <br>
+                                <input type="text" id="Nombre" maxlength="20" size="20" placeholder="Escribe tu Nombre">
+                                <br><br><br>
+                                <label for="email">Correo Eléctronico:</label>
+                                <br>
+                                <input type="email" id="email" maxlength="40" size="40" placeholder="correo@ejemplo.com">
+                                <br><br><br>
+                                <label type="mensaje">Mensaje: </label>
+                                <br>
+                                <textarea placeholder="Escribe tu mensaje" rows="4" cols="50"></textarea>
+                                <br>
+                                <input type="submit" value="Enviar" id="enviar">
+                           
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="iconosfooter">
+                <a href="#"><i class="bi bi-arrow-up-circle"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/paolak2" target="_blank"><i class="bi bi-github"></i></a>
+            </div>    
+                <p class="footer-texto">&copy; 2025 Quillera Portfolio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
