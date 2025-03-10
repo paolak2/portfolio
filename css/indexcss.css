@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;/*Elementos no crezcan mas alla */
+}
+html{
+    scroll-behavior: smooth;/*Para mejorar la transicion del navbar*/
+}
+/*Google Fonts Sigmar*/
+.sigmar-regular {
+    font-family: "Sigmar", sans-serif;
+    font-style: normal;;
+}
+/*Cuerpo de pagina, Estilos Generales*/
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1{font-size: 2em;}
+h2{font-size: 2.1em; font-family: "Sigmar", sans-serif;}
+h3{font-size: 1.5em;  font-family: "Sigmar", sans-serif;font-weight: 300;}
+p{font-size: 1.5em;}
+ul{list-style: none;}
+li{font-size: 1.8em;}
+label{font-size: 1rem; font-weight: 300;font-family: "Sigmar", sans-serif;}
+
+.contenedor-enlaces a:hover{
+    transition: 0.9s;
+    background-color: pink;
+    border-radius: 100%;
+    color: rgb(20, 39, 65);
+
+}
+button, #enviar{ 
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: whitesmoke;
+    background-color: rgb(53, 109, 182);
+    margin: 3px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(234, 237, 241);
+    color: rgb(53, 109, 182);
+    transition: 0.9s;
+}
+
+#enviar{
+    font-size: 0.8em;
+}
+/*Estilos espacificos*/
+.container{
+    max-width: 1400px;/*ancho máximo*/
+    margin:auto;
+}
+/*header barra de navegacion*/
+header{
+    background-color: rgb(20, 39, 65);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;/*25 Espacio a los lados y 30 espacio arriba ya abajo*/
+    color: pink;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+header a:hover{
+    color: pink;
+}
+/*section hero*/
+#hero{
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(20, 39, 65);
+    height: 90vh;/*ocupa el 90% de la altura de la pantalla*/
+    color: whitesmoke;
+} 
+
+#hero h1{
+    font-family: "Sigmar", sans-serif;
+    font-weight: 300;
+    color: pink;
+    padding-bottom: 150px;
+}
+
+/*seccion aboutme*/
+#Aboutme .container{
+    text-align: center;
+    padding: 40px 12px;
+}
+
+#Aboutme .container-imagen img{
+    height: 50%;
+    width: 50%;
+    background-color: pink;
+    border-radius: 50%;
+}
+
+#Aboutme h2{
+    font-family: "Sigmar", sans-serif;
+    font-weight: 300;
+    color: rgb(53, 109, 182);
+    font-size: 4em;
+}
+/*seccion skills*/
+#skills{
+    background-color: rgb(20, 39, 65);
+    color: white;
+    text-align: center;
+}
+#skills h2{
+    color: rgb(53, 109, 182);
+    font-weight: 300;
+    font-size: 3em;
+}
+#skills .container{
+    padding: 100px 20px;
+}
+#skills .container-habilidades{
+    margin: 30px;
+    border-style: dotted;
+    border-radius: 15px;
+    padding: 25px;
+}
+#icono{
+    background-color: pink;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    height: 60px;
+    border-radius: 100%;
+    font-size: 40px;
+}
+
+/*seccion contacto texto*/
+#contacto .container{
+    padding: 150px 12px;
+    text-align: center;
+}
+#contacto h3{
+    color: rgb(53, 109, 182);
+    font-size: 28px;
+}
+#contacto li{
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+#contacto ion-icon{
+    color: rgb(53, 109, 182);
+    padding-right: 10px;
+}
+/*seccion contacto-formulario*/
+#contacto .container{
+    padding-top: 80px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.container-formulario{
+    margin: 50px;
+    padding: 10px;
+}
+
+#contacto fieldset{
+    background-color: pink;
+    border-radius: 15px;
+    border: 3px solid rgba(0,0,0,0.5);
+    border-style:dotted;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+/*seccion footer*/
+footer{
+    background-color: rgb(226, 230, 235);
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    height: 30vh;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iconosfooter {
+    font-size: 60px;
+    margin: 10px 1px;
+    padding-top: 15px;
+} 
+.iconosfooter i{
+    color: pink;
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 20%;
+    column-gap: 10px;
+    row-gap: 5px;
+    justify-content: center;
+}
+
+/******estilos par la página cuando la pantalla sea mayor a 720px*****/
+@media (min-width: 800px) {
+    /*Seccion principal*/
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero{
+        padding-top: 80px;
+        padding-bottom: 600px;
+    }
+
+    #hero h1{
+        padding-bottom: 200px;
+        font-size: 2.5rem;
+    }
+
+    #Aboutme {
+        padding-top: 10px;
+    }
+
+    #Aboutme .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Aboutme .container-imagen img{
+        height: 400px;
+        width: 400px;
+    }
+
+    #Aboutme h2{
+        color: rgb(53, 109, 182);
+        font-weight: 300;
+        font-size: 5.5em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #Aboutme .texto{
+        display: flex;
+    }
+    #Aboutme p{
+        font-size: 1.2em;
+        padding:  15px 60px;
+        max-width: 1200px;
+    }
+    #skills .container{
+        padding: 10px;
+    }
+    #skills .habilidades{
+        display: flex;
+    }
+    #skills h2{
+        color: rgb(53, 109, 182);
+        font-weight: 300;
+        font-size: 5em;
+        margin-top: 50px;
+        margin-bottom: 3px;
+    }
+    #contacto h3{
+        font-size: 45px;
+    }
+
+    #contacto .container li{
+        text-align: left;
+    }
+    #contacto .container{
+        padding-top: 15px;
+    }
+    #contacto .container h3{
+        text-align: center;
+    }
+
+    /*seccion contacto-formulario*/
+
+    #contacto{
+        gap: 50px;
+        justify-content: space-between;
+        margin:3px 12px;
+    }
+    #contacto .container{
+    display: flex;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    justify-content: center;
+    }
+#contacto fieldset{
+    height: 400px;
+    width: 500px;
+    field-sizing: 900px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+footer{
+background-color: rgb(226, 230, 235);
+text-align: center;
+font-size: 13px;
+font-weight: bold;
+height: 35vh;
+padding-top: 50px;
+}
+}
+
